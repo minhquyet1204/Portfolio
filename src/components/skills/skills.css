@@ -1,0 +1,35 @@
+.skills__container {
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.skills {
+    background-image: var(--third-gradient);
+}
+
+.skills__logo {
+    font-size: 80px;
+    padding: 10px 10px;
+    transition: all .5s var(--transition);
+}
+
+.skills__logo:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1024px) {
+
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .skills__logo {
+        font-size: 60px;
+    }
+}
