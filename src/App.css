@@ -55,7 +55,7 @@
 @media screen and (max-width: 600px) {
 
     :root {
-        --h1-font-size: 36px;
+        --h1-font-size: 32px;
         --h2-font-size: 28px;
         --h3-font-size: 26px;
     }
