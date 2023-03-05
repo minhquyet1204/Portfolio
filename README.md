@@ -9,8 +9,8 @@
 - Dark theme
   <img width="768" alt="" src="https://ik.imagekit.io/120499/port_dark_mode.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1678030476379">
 
--Light theme
-<img width="768" alt="" src="https://ik.imagekit.io/120499/port_light_mode.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1678030453838">
+- Light theme
+  <img width="768" alt="" src="https://ik.imagekit.io/120499/port_light_mode.PNG?ik-sdk-version=javascript-1.4.3&updatedAt=1678030453838">
 
 Built using:
 
