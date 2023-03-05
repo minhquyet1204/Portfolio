@@ -45,6 +45,7 @@ export const projects = [
     img: Project3,
     category: "React , Framer Motion , Tailwindcss",
     title: "Burger Restaurant",
+    href: "https://rescorner.netlify.app/",
     description:
       "I love the effect on the website and i try it with Framer Motion",
   },
