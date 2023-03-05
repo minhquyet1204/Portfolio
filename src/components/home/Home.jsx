@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 
-import { FaGithub, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -26,11 +26,19 @@ const Home = () => {
           </p>
 
           <div className="home__socials">
-            <a href="https://www.facebook.com/" className="home__social-link">
-              <FaFacebook />
+            <a
+              href="https://www.linkedin.com/in/le-minh-quyet-426536268/"
+              target="blank"
+              className="home__social-link"
+            >
+              <FaLinkedin />
             </a>
 
-            <a href="https://www.facebook.com/" className="home__social-link">
+            <a
+              href="https://github.com/minhquyet1204"
+              target="blank"
+              className="home__social-link"
+            >
               <FaGithub />
             </a>
           </div>
