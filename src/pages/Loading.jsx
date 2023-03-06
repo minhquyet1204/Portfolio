@@ -2,7 +2,7 @@ import React from "react";
 import "./loading.css";
 const Loading = () => {
   return (
-    <section className="section">
+    <div className="loading-section">
       <div
         aria-label="Orange and tan hamster running in a metal wheel"
         role="img"
@@ -25,7 +25,7 @@ const Loading = () => {
         </div>
         <div class="spoke"></div>
       </div>
-    </section>
+    </div>
   );
 };
 
