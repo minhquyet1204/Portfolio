@@ -2,7 +2,6 @@ import React from "react";
 import "./home.css";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import aboutMeImg from "../../assets/aboutme.png";
 
 const Home = () => {
   return (
