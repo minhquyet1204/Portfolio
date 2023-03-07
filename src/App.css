@@ -59,10 +59,7 @@
         --h2-font-size: 28px;
         --h3-font-size: 26px;
     }
-
 }
-
-
 
 /* light theme */
 
@@ -95,6 +92,11 @@
 
 /* common  */
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -114,9 +116,7 @@ body {
     background-color: var(--bg-color);
 }
 
-body.no-scroll {
-    overflow: hidden;
-}
+
 
 h1,
 h2,

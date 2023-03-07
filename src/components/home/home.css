@@ -61,6 +61,7 @@
 
 
 
+
 .home__socials {
     display: flex;
     column-gap: 20px;
@@ -107,13 +108,7 @@
 
 
 @media screen and (max-width: 600px) {
-
     .home__title {
         font-size: 40px;
     }
-
-    .home__about {
-        max-width: 100%;
-    }
-
 }

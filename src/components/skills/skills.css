@@ -32,7 +32,7 @@
     border-radius: 6px;
 
 
-    /* Position the tooltip */
+
     position: absolute;
     z-index: 1;
 }
@@ -58,7 +58,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .skills__logo {
+    .skills__logo i {
         font-size: 60px;
     }
 }

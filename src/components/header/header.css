@@ -37,11 +37,13 @@
 }
 
 .show__nav {
-    width: 450px;
+    width: 400px;
 }
 
 .nav__data {
     padding: 240px 120px;
+    display: grid;
+    place-content: center;
 }
 
 .nav__list {
@@ -51,11 +53,6 @@
 .nav__list li {
     margin-bottom: 20px;
     cursor: pointer;
-}
-
-.nav__list,
-.header__socials {
-    margin-left: 40px;
 }
 
 .nav__link {
@@ -143,7 +140,12 @@
 
 /* Responsive */
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+
+    .show__nav {
+        width: 320px;
+    }
+}
 
 
 
@@ -151,10 +153,5 @@
 
     .show__nav {
         width: 100%;
-    }
-
-    .nav__list,
-    .header__socials {
-        margin-left: 0;
     }
 }

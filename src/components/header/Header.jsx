@@ -12,10 +12,6 @@ const Header = () => {
   const [scrollNav, setScrollNav] = useState(false);
   const [theme, setTheme] = useState("dark-theme");
 
-  useEffect(() => {
-    document.body.classList.toggle("no-scroll", showNav);
-  }, [showNav]);
-
   const scrollTop = () => {
     animateScroll.scrollToTop();
   };
