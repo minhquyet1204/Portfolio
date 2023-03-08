@@ -27,8 +27,7 @@ const Home = () => {
             <p className="home__about-text">
               I started my in-depth front-end programming journey in summer 2022
               and always kept upgrading my skills. I have experience with
-              ReactJS .I'm also can use Redux , TailwindCSS and now i'm learning
-              Typescript.
+              ReactJS and i'm also can use Redux , TailwindCSS.
             </p>
           </div>
 
