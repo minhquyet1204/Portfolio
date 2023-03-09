@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 
+import cv from "../../assets/cv.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
@@ -50,7 +51,7 @@ const Home = () => {
           </div>
 
           <div className="home__btns">
-            <a href="/" className="btn text-css">
+            <a href={cv} className="btn text-css">
               Download CV
             </a>
           </div>
