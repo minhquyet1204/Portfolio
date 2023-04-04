@@ -12,31 +12,31 @@ const Skills = () => {
       <div className="skills__container container grid">
         <div className="skills__logo">
           <i className="devicon-html5-plain colored"></i>
-          <span class="tooltiptext">HTML</span>
+          <span className="tooltiptext">HTML</span>
         </div>
 
         <div className="skills__logo">
           <i className="devicon-css3-plain colored"></i>
-          <span class="tooltiptext">CSS</span>
+          <span className="tooltiptext">CSS</span>
         </div>
         <div className="skills__logo">
-          <i class="devicon-javascript-plain colored"></i>
-          <span class="tooltiptext">Javascript</span>
+          <i className="devicon-javascript-plain colored"></i>
+          <span className="tooltiptext">Javascript</span>
         </div>
 
         <div className="skills__logo">
           <i className="devicon-react-original colored"></i>
-          <span class="tooltiptext">React</span>
+          <span className="tooltiptext">React</span>
         </div>
 
         <div className="skills__logo">
           <i className="devicon-redux-original colored"></i>
-          <span class="tooltiptext">Redux</span>
+          <span className="tooltiptext">Redux</span>
         </div>
 
         <div className="skills__logo">
           <i className="devicon-tailwindcss-plain colored"></i>
-          <span class="tooltiptext">TailwindCss</span>
+          <span className="tooltiptext">TailwindCss</span>
         </div>
       </div>
     </section>

@@ -25,20 +25,19 @@ export const projects = [
   {
     id: 1,
     img: Project1,
-    category: "React , Hooks",
-    title: "Food order",
-    href: "https://diningfood.netlify.app/",
+    category: "React , React Router , Sass",
+    title: "Movie Web",
+    href: "https://cinemaself.netlify.app/",
     description:
-      "The first project I did after completing the course, this project uses React Hooks : useContext and useReducer",
+      "The website contains information about popular movies, you can add your favorite movies to the collection",
   },
   {
     id: 2,
     img: Project2,
-    category: "React , Redux Toolkit",
+    category: "React , React Router , Redux Toolkit",
     title: "Ecommerce clothes",
     href: "https://dailydiscounts.netlify.app/",
-    description:
-      "I tried my hand at learning Redux and this is the result, old bottle of new wine",
+    description: "I tried at learning Redux Toolkit and this is the result",
   },
   {
     id: 3,

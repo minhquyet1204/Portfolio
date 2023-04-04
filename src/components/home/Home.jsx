@@ -1,10 +1,14 @@
 import React from "react";
 import "./home.css";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import cv from "../../assets/cv.pdf";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
+  const [subText] = useTypewriter({
+    words: ["I am Front end Developer"],
+    loop: 0,
+  });
   return (
     <section className="home" id="home">
       <div className="home__wrapper">
@@ -18,7 +22,8 @@ const Home = () => {
           </h1>
 
           <p className="home__job">
-            <span className="text-css">I Am</span> <b>Front End Developer</b>
+            <span className="text-css"></span> <b>{subText}</b>
+            <Cursor />
           </p>
 
           <div className="home__about">
@@ -35,23 +40,25 @@ const Home = () => {
           <div className="home__socials">
             <a
               href="https://www.linkedin.com/in/le-minh-quyet-426536268/"
-              target="blank"
+              target="_blank"
               className="home__social-link"
+              rel="noreferrer"
             >
               <FaLinkedin />
             </a>
 
             <a
               href="https://github.com/minhquyet1204"
-              target="blank"
+              target="_blank"
               className="home__social-link"
+              rel="noreferrer"
             >
               <FaGithub />
             </a>
           </div>
 
           <div className="home__btns">
-            <a href={cv} className="btn text-css">
+            <a href="LeMinhQuyet_ReactJs.pdf" className="btn text-css">
               Download CV
             </a>
           </div>
