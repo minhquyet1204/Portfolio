@@ -28,7 +28,7 @@
     --primary-font: 'Jost', sans-serif;
     --secondary-font: 'Caveat', cursive;
 
-    --big-font-size: 70px;
+    --big-font-size: 60px;
     --largest-font-size: 21px;
     --larger-font-size: 20px;
     --large-font-size: 18px;
@@ -50,7 +50,13 @@
 
 /* responsive */
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1400px) {
+
+
+    .section__deco:not(.header__deco) {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 600px) {
 
@@ -91,7 +97,9 @@
 
 
 /* common  */
-
+main {
+    overflow: hidden;
+}
 
 html {
     scroll-behavior: smooth;
@@ -168,7 +176,7 @@ img {
 }
 
 .text-css {
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 0.05rem;
 }
 
@@ -216,6 +224,7 @@ img {
 
 .section {
     padding-bottom: 120px;
+    position: relative;
 }
 
 .section__title,
@@ -280,4 +289,74 @@ img {
     right: -24px;
     width: 141px;
     height: 141px;
+}
+
+.home__wrapper .section__deco {
+    position: absolute;
+    top: 15%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70%;
+    background-color: var(--border-color);
+    z-index: 1;
+}
+
+.section__deco {
+    position: absolute;
+    top: 10%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 70%;
+    background-color: var(--border-color);
+    z-index: 1;
+
+}
+
+.section__deco::before,
+.section__deco::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+
+}
+
+.section__deco::before {
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.section__deco::after {
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+
+.deco__right {
+    right: 3%;
+}
+
+.deco__left {
+    left: 3%;
+}
+
+
+.section__deco .shape {
+    max-width: 200px;
+    height: 200px;
+    bottom: -100px;
+}
+
+.deco__left .shape {
+    left: -170px;
+}
+
+.deco__right .shape {
+    right: -170px;
 }

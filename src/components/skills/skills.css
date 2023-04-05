@@ -46,6 +46,39 @@
 
 }
 
+@keyframes jelly {
+
+    0%,
+    100% {
+        transform: scale(1, 1);
+        filter: grayscale(100%);
+    }
+
+    25% {
+        transform: scale(0.9, 1.1);
+        filter: grayscale(100%);
+    }
+
+    50% {
+        transform: scale(1.1, 0.9);
+        filter: grayscale(100%);
+    }
+
+    75% {
+        transform: scale(0.95, 1.05);
+        filter: grayscale(100%);
+    }
+
+    100% {
+        filter: grayscale(0);
+    }
+}
+
+
+.animate-jelly {
+    animation: jelly 1s ease-in-out;
+}
+
 @media screen and (max-width: 1024px) {
 
     .skills__container {

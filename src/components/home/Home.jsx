@@ -1,32 +1,45 @@
 import React from "react";
+import shapeOne from "../../assets/shape-1.png";
+
 import "./home.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
+import { useWasViewed } from "../../hook/useWasViewd";
+
 const Home = () => {
   const [subText] = useTypewriter({
-    words: ["I am Front end Developer"],
+    words: ["LE MINH QUYET"],
     loop: 0,
   });
+
+  const { setRef, wasViewed } = useWasViewed();
+  const animation = wasViewed ? "animate-base" : "null";
+
   return (
-    <section className="home" id="home">
+    <section className={`home `} id="home" ref={setRef}>
       <div className="home__wrapper">
-        <div className="home__container container">
+        <div className={`home__container container ${animation}`}>
           <p className="home__subtitle text-css">
             Hello , <span>My name is</span>
           </p>
 
           <h1 className="home__title text-css">
-            <span>LE MINH </span>QUYET
+            <span>{subText} </span>
+            <Cursor />
           </h1>
 
           <p className="home__job">
-            <span className="text-css"></span> <b>{subText}</b>
-            <Cursor />
+            <span className="text-css">
+              I am{" "}
+              <span>
+                <b>Frontend Developer</b>
+              </span>
+            </span>
           </p>
 
-          <div className="home__about">
+          <div className={`home__about `}>
             <h4 className="home__about-title">
               Welcome to my personal website!
             </h4>
@@ -62,6 +75,10 @@ const Home = () => {
               Download CV
             </a>
           </div>
+        </div>
+
+        <div className="section__deco deco__left">
+          <img src={shapeOne} alt="" className="shape" />
         </div>
       </div>
     </section>

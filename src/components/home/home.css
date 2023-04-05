@@ -8,6 +8,7 @@
     display: grid;
     place-content: center;
 
+
 }
 
 .home__container {
@@ -59,8 +60,21 @@
     margin-bottom: 12px;
 }
 
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0px, 0px, 1000px);
+    }
 
+    80% {
+        opacity: 0.8;
+        transform: none;
+    }
+}
 
+.animate-base {
+    animation: zoom-in 1.25s ease-out 0s both;
+}
 
 .home__socials {
     display: flex;

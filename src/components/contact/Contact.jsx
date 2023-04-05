@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
+import shapeOne from "../../assets/shape-1.png";
 
 import { FaRegMap, FaRegEnvelope, FaRegAddressBook } from "react-icons/fa";
 
 import "./contact.css";
+import { useWasViewed } from "../../hook/useWasViewd";
 
 const Contact = () => {
+  const { setRef, wasViewed } = useWasViewed();
+  const animation = wasViewed ? "animate-fade-in-up " : "null";
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -39,7 +43,10 @@ const Contact = () => {
         text<span> Me</span>
       </p>
 
-      <div className="contact__container container grid">
+      <div
+        ref={setRef}
+        className={`contact__container container grid ${animation}`}
+      >
         <div className="contact__content">
           <div className="contact__card">
             <span className="contact__card-icon">
@@ -131,6 +138,10 @@ const Contact = () => {
             </button>
           </div>
         </form>
+      </div>
+
+      <div className="section__deco deco__right">
+        <img src={shapeOne} alt="" className="shape" />
       </div>
     </section>
   );

@@ -41,6 +41,25 @@
     min-height: 125px;
 }
 
+.animate-fade-in-down {
+    animation: fade-in-down 1s ease-in-out;
+}
+
+
+
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
 
 @media screen and (max-width: 1024px) {
 

@@ -8,6 +8,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
 import Loading from "./pages/Loading";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -33,6 +34,7 @@ function App() {
           <Skills />
           <Portfolio />
           <Contact />
+          <Footer />
         </>
       )}
     </main>
