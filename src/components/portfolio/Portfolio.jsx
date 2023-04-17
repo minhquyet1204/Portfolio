@@ -1,6 +1,5 @@
-import "./portfolio.css";
 import Item from "./Item";
-import shapeOne from "../../assets/shape-1.png";
+import "./portfolio.css";
 
 import { projects } from "../../Data";
 import { useWasViewed } from "../../hook/useWasViewd";
@@ -22,10 +21,6 @@ const Portfolio = () => {
         {projects.map((project) => (
           <Item key={project.id} project={project} />
         ))}
-      </div>
-
-      <div className="section__deco deco__left">
-        <img src={shapeOne} alt="" className="shape" />
       </div>
     </section>
   );

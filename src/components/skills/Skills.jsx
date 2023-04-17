@@ -1,7 +1,6 @@
 import React from "react";
-import "./skills.css";
-import shapeOne from "../../assets/shape-1.png";
 import { useWasViewed } from "../../hook/useWasViewd";
+import "./skills.css";
 
 const Skills = () => {
   const { setRef, wasViewed } = useWasViewed();
@@ -46,10 +45,6 @@ const Skills = () => {
           <i className="devicon-tailwindcss-plain colored"></i>
           <span className="tooltiptext">TailwindCss</span>
         </div>
-      </div>
-
-      <div className="section__deco deco__right">
-        <img src={shapeOne} alt="" className="shape" />
       </div>
     </section>
   );

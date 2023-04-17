@@ -10,7 +10,7 @@ const Footer = () => {
         Finally, I would like to say "Thank You" for spent time to look at my
         portfolio.
         <br />
-        <span>Have a nice day.</span>
+        <span className="final-word">Have a nice day.</span>
       </span>
     </footer>
   );

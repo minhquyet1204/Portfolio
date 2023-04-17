@@ -1,12 +1,9 @@
 import React from "react";
-import shapeOne from "../../assets/shape-1.png";
 
-import "./home.css";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import "./home.css";
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
-import { useWasViewed } from "../../hook/useWasViewd";
 
 const Home = () => {
   const [subText] = useTypewriter({
@@ -14,13 +11,10 @@ const Home = () => {
     loop: 0,
   });
 
-  const { setRef, wasViewed } = useWasViewed();
-  const animation = wasViewed ? "animate-base" : "null";
-
   return (
-    <section className={`home `} id="home" ref={setRef}>
+    <section className={`home `} id="home">
       <div className="home__wrapper">
-        <div className={`home__container container ${animation}`}>
+        <div className={`home__container container `}>
           <p className="home__subtitle text-css">
             Hello , <span>My name is</span>
           </p>
@@ -75,10 +69,6 @@ const Home = () => {
               Download CV
             </a>
           </div>
-        </div>
-
-        <div className="section__deco deco__left">
-          <img src={shapeOne} alt="" className="shape" />
         </div>
       </div>
     </section>

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import { navs } from "../../Data";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { BsSun, BsMoon } from "react-icons/bs";
+import { BsMoon, BsSun } from "react-icons/bs";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link, animateScroll } from "react-scroll";
-import shapeOne from "../../assets/shape-1.png";
+import { navs } from "../../Data";
 
 import "./header.css";
 
@@ -88,10 +87,6 @@ const Header = () => {
                 <FaGithub />
               </a>
             </div>
-          </div>
-
-          <div className="section__deco deco__left header__deco">
-            <img src={shapeOne} alt="" className="shape" />
           </div>
         </div>
 

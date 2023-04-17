@@ -13,3 +13,7 @@
     display: block;
     margin: 20px 0;
 }
+
+.footer .final-word {
+    color: var(--primary-color);
+}

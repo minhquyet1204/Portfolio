@@ -291,7 +291,7 @@ img {
     height: 141px;
 }
 
-.home__wrapper .section__deco {
+/* .home__wrapper .section__deco {
     position: absolute;
     top: 15%;
     transform: translateX(-50%);
@@ -359,4 +359,4 @@ img {
 
 .deco__right .shape {
     right: -170px;
-}
+} */

@@ -11,10 +11,9 @@ import Loading from "./pages/Loading";
 import Footer from "./components/footer/Footer";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     const waitTimer = setTimeout(() => {
       setLoading(false);
     }, 1000);
